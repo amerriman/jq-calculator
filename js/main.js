@@ -60,5 +60,6 @@ $(document).ready(function(){
 });
 
 
+
 //make a switch statement?  If the html includes a +, then add?
 //or attach the function right to the button and call the html as the parameters?
