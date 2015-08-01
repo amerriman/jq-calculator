@@ -12,7 +12,6 @@ $(document).ready(function(){
   $('.operator').not('#cancel').not("#calc").on("click", function(){
     var opPressed = $(this).html();
     $('#screen').append(" " + opPressed + " ");
-
   });
 
   //clear the screen when C is clicked
@@ -27,6 +26,8 @@ $(document).ready(function(){
     getScreen();
     $('#screen').html(null).append(total);
   });
+
+});
 
 //all the operators html
   var operators = ["+", "-", "*", "/"];
@@ -100,7 +101,7 @@ function addition (a, b){
     return result;
   }
 
-});
+
 
         //find the index of +
 //          var index = screenResults.indexOf("+");
@@ -147,11 +148,45 @@ function addition (a, b){
 //If Javascript already knows the order of operations, can't we just return the equation?
 
 
-
-
-
-
 //unbelievable.
 // --sample = "8+2*9"
 // --eval(sample)
 // --26
+
+//grabs first number and the operator and add its to the arithmetic array
+// $('.operator').not('#cancel').not("#calc").on("click", function(){
+
+//     var opPressed = $(this).html();
+//     var calcScreenArray = $('#screen').html().split('');
+//     operator = calcScreenArray.pop();
+//     arthimeticArray.push(calcScreenArray.join(''));
+//     arthimeticArray.push(operator);
+//     tempArray.push(num2)
+// ;    $('#screen').append(" " + opPressed + " ");
+//   });
+
+
+// function normalizeData(resultsArray) {
+//   var operators = ["+", "-", "*", "/"];
+//   var tempArray = [];
+//   for (var i = 0; i < operators.length; i++) {
+//     if(operator === '*'){
+//       for (var j = 0; j < resultsArray.length; j++) {
+//     console.log(tempArray.push(resultsArray[i]));
+//       }
+//     }
+//   }
+
+// }
+
+
+// switch(operatorInput){
+//   case '+':
+//     return(a + b);
+//   case '-':
+//     return(a + b);
+//   case '*':
+//       return(a + b);
+//   case '/':
+//       return(a + b);
+// }
